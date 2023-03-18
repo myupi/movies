@@ -1,0 +1,126 @@
+h1 {
+  text-shadow: 2px 1px 50px rgba(255, 0, 0, 0.5);
+}
+
+.box {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+.box .main-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  width: 24%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.box .main-card:hover {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+.box .main-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+.box .main-card h2 {
+  min-height: 200px;
+  display: inline-block;
+}
+
+.mod {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.mod .module {
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.mod .module .top {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mod .module .top img {
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+}
+.mod .module .top ul {
+  width: 50%;
+  color: white;
+}
+.mod .module p {
+  color: white;
+}
+.mod .module .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.mod .module .bottom a {
+  width: 50%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(147, 147, 147, 0.9);
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+.mod .module .bottom a:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+}
+.mod .module .bottom button {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .box .main-card {
+    width: 32%;
+  }
+}
+@media (max-width: 768px) {
+  .box .main-card {
+    width: 49%;
+  }
+  .mod .module {
+    width: 90%;
+  }
+  .mod .module .top {
+    flex-wrap: wrap;
+  }
+  .mod .module .top ul {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .box .main-card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
